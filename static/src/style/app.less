@@ -1,0 +1,88 @@
+@import "pattern.less";
+
+html, body {
+	height: 100%;
+	margin: 0;
+	font-family: Arial, SimHei;
+}
+
+a { text-decoration: none; }
+.fl { float: left; }
+.fr { float: right; }
+.cf { clear: both; }
+.clickable { cursor: pointer; }
+
+.app {
+	width: 100%;
+	height: 100%;
+}
+
+.scope {
+	width: 100%;
+	height: 100%;
+	
+	>.header, >.footer {
+		box-sizing: border-box;
+
+		width: 100%;
+		height: 48px;
+		position: absolute;
+		z-index: 2;
+
+		>.icon {
+			width: 48px;
+			height: 48px;
+			line-height: 48px;
+			
+			font-size: 32px;
+			text-align: center;
+			color: #ffffff;
+		}
+
+		>.menu-btn {
+			margin-left: 16px;
+			line-height: 48px;
+			font-size: 24px;
+			color: #ffffff;
+		}
+	}
+
+	>.header {
+		top: 0;
+		background-color: @blue;
+	}
+
+	>.footer {
+		bottom: 0;
+		background-color: #eeeeee;
+
+		display: flex;
+		display: -webkit-flex;
+		justify-content: space-between;
+
+		>.tab {
+			width: 25%;
+			height: 48px;
+			line-height: 48px;
+			font-size: 14px;
+			text-align: center;
+			display: block;
+		}
+	}
+
+	>.header ~.body {
+		padding-top: 48px;
+	}
+
+	>.footer ~.body {
+		padding-bottom: 48px;
+	}
+
+	>.body {
+		box-sizing: border-box;
+		width: 100%;
+		height: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+}

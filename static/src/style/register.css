@@ -1,0 +1,56 @@
+.register-scope .form > .group {
+  height: 40px;
+  padding: 0 8px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dbe2ea;
+  color: rgba(0, 0, 0, 0.54);
+}
+.register-scope .form > .group.last {
+  border-bottom: none;
+}
+.register-scope .form > .group > .fixed {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}
+.register-scope .form > .group > .auto {
+  margin-left: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 0;
+}
+.register-scope .form > .group .text-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 12px 0;
+  line-height: 16px;
+  border: none;
+  outline: none;
+}
+.register-scope .form .btn {
+  margin: 0 8px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  height: 40px;
+  position: relative;
+  line-height: 40px;
+  background-color: #2dabe1;
+  border-radius: 2px;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+}
+.register-scope .form .btn:hover {
+  background-color: #1fa2da;
+}
+.register-scope .form .btn > a {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  display: block;
+}
+
+/*# sourceMappingURL=register.css.map */

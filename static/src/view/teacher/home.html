@@ -1,0 +1,13 @@
+<div class="scope home-scope">
+	<div class="header">
+		<div class="menu-btn">TalkScript</div>
+	</div>
+	<div class="footer">
+		<a class="tab clickable" v-link="{ path: '/home/lesson' }">教学班</a>
+		<a class="tab clickable" v-link="{ path: '/home/student' }">学生</a>
+		<a class="tab clickable" v-link="{ path: '/home/teach' }">上课</a>
+	</div>
+	<div class="body">
+		<router-view></router-view>
+	</div>	
+</div>

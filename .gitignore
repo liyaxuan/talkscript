@@ -1,0 +1,6 @@
+/ngrok
+/node_modules
+/res
+/upload
+gulpconfig.js
+gulpfile.js

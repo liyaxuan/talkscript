@@ -1,0 +1,26 @@
+<div class="scope register-scope">
+	<div class="header"></div>
+	<div class="body">
+		<div class="inner">
+			<form class="form">
+				<div class="group">
+					<div class="fixed fl">工号</div>
+					<div class="auto"><input name="tid" type="text" class="text-input" v-model="tid"></div>
+				</div>
+				<div class="group">
+					<div class="fixed fl">姓名</div>
+					<div class="auto"><input name="name" type="text" class="text-input" v-model="name"></div>
+				</div>
+				<div class="group">
+					<div class="fixed fl">手机</div>
+					<div class="auto"><input name="phone" type="text" class="text-input" v-model="phone"></div>
+				</div>
+				<div class="group">
+					<div class="fixed fl">密码</div>
+					<div class="auto"><input name="pwd" type="password" class="text-input" v-model="pwd"></div>
+				</div>
+				<div class="btn clickable" v-on:click="register()">注册</div>
+			</form>
+		</div>
+	</div>	
+</div>

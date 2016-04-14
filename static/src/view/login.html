@@ -1,0 +1,36 @@
+<div class="scope login-scope">
+	<div class="banner">
+		<div class="center">
+			<div class="main-title">TalkScript</div>
+			<div class="sub-title">JavaScript/NodeJS</div>
+		</div>
+	</div>
+	<div class="body">
+		<div class="group">
+			<div class="icon material-icon fixed fl">person</div>
+			<div class="auto">
+				<input class="text-input" type="text" placeholder="教工号" v-model="username">
+			</div>
+		</div>
+		<div class="group">
+			<div class="icon material-icon fixed fl">lock</div>
+			<div class="auto">
+				<input class="text-input" type="password" placeholder="密码" v-model="password">
+			</div>
+		</div>
+		<div class="radio-group">
+			<div class="radio fl">
+				<div class="btn fl" v-on:click="select('admin', $event)"></div>
+				<div class="text fl">管理员</div>
+				<div class="cf"></div>
+			</div>
+			<div class="radio fl">
+				<div class="btn fl selected" v-on:click="select('teacher', $event)"></div>
+				<div class="text fl">教师</div>
+				<div class="cf"></div>
+			</div>
+			<div class="cf"></div>
+		</div>
+		<div class="btn login-btn clickable" v-on:click="login()">登录</div>
+	</div>	
+</div>

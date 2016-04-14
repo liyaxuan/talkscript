@@ -1,0 +1,54 @@
+@import "pattern.less";
+
+.home-scope {
+	
+	.lesson-list, .course-list {
+		margin: 16px;
+	}
+
+	.list {
+		border: 1px solid #dddddd;
+		
+		>.item {
+			padding: 8px;
+			border-bottom: 1px solid #dddddd;		
+			&.last { border-bottom: none; }
+
+			>.info {
+				height: 24px;
+				font-size: 14px;
+				color: rgba(0, 0, 0, 0.54);			
+			}
+
+			>.op {
+				>.no {
+					width: 24px;
+					height: 24px;
+					line-height: 24px;
+
+					margin-right: 8px;
+
+					background-color: @blue;
+					border-radius: 50%;
+
+					font-size: 12px;
+					text-align: center;
+					color: #ffffff;
+
+					&.forbidden { background-color: #dddddd; }
+					&.selected { background-color: @red; }
+				}
+			}
+		}
+	}
+
+	.warn-block {
+		.warn-block();
+	}
+
+	.btn {
+		margin: 0 16px;
+		margin-bottom: 16px;
+		.cross-btn();
+	}	
+}
